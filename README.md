@@ -1,4 +1,7 @@
 # Books Android App 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a3d75f0e308e4018bcccdde7daa7f6ef)](https://app.codacy.com/app/hayssamsoussi/BooksApp-Java?utm_source=github.com&utm_medium=referral&utm_content=hayssamsoussi/BooksApp-Java&utm_campaign=Badge_Grade_Dashboard)
+
 A simple Android app, that helps user to discover books from Google Books API.
 
 ![Alt Text](https://media.giphy.com/media/Mb9MPcUYzLMG0oEdR8/giphy.gif)
