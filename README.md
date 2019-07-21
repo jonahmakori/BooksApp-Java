@@ -19,6 +19,11 @@ git clone https://github.com/hayssamsoussi/BooksApp-Java.git
 - Glide 4.4.0
 - Google Books API
 
+# To Do
+- Expandable list for categories
+- Share favorite books
+- Scan book's barcode to search for it
+
 # Contact Info
 
 Email: hayssamsoussi@gmail.com
