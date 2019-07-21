@@ -1,5 +1,11 @@
 # Books Android App 
-This Github repository is dedicated to my independent and small projects and experiments on Native Android Development.
+A simple Android app, that helps user to discover books from Google Books API.
+
+# Features
+- Discover all the books
+- Read description and the information
+- Add books to favorite list
+- Search for books
 
 # Install
 - Android Studio 2.3 or Higher
