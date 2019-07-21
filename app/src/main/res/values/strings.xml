@@ -15,5 +15,41 @@
     <string name='title_activity_book_detail'>Book</string>
     <string name="favorites_msg">Added to favorites!</string>
 
+    <string-array name="categories_list">
+        <item>Action and Adventure</item>
+        <item>Anthology</item>
+        <item>Classic</item>
+        <item>Comic and Graphic Novel</item>
+        <item>Crime and Detective</item>
+        <item>Drama</item>
+        <item>Fable</item>
+        <item>Fairy Tale</item>
+        <item>Fan-Fiction</item>
+        <item>Fantasy</item>
+        <item>Historical Fiction</item>
+        <item>Horror</item>
+        <item>Humor</item>
+        <item>Legend</item>
+        <item>Magical Realism</item>
+        <item>Mystery</item>
+        <item>Mythology</item>
+        <item>Realistic Fiction</item>
+        <item>Romance</item>
+        <item>Satire</item>
+        <item>Science Fiction (Sci-Fi)</item>
+        <item>Short Story</item>
+        <item>Suspense/Thriller</item>
+        <item>Biography/Autobiography</item>
+        <item>Essay</item>
+        <item>Memoir</item>
+        <item>Narrative Nonfiction</item>
+        <item>Periodicals</item>
+        <item>Reference Books</item>
+        <item>Self-help Book</item>
+        <item>Speech</item>
+        <item>Textbook</item>
+        <item>Poetry</item>
+    </string-array>
+
 
 </resources>

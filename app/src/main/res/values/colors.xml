@@ -3,4 +3,5 @@
     <color name="colorPrimary">#222222</color>
     <color name="colorPrimaryDark">#1B1B1B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="album_title">#4c4c4c</color>
 </resources>

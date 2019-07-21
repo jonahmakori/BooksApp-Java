@@ -27,8 +27,11 @@ public class CategoriesFragment extends Fragment {
         View view = inflater.inflate(R.layout.categories_fragment, container, false);
 
         //Creating categories in local database
-        final String[] values = new String[] { "Android", "iPhone", "WindowsMobile" };
-        final ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, values);
+        String[] books_cateogires = getResources().getStringArray(R.array.categories_list);
+
+
+        //final String[] values = new String[] { "Action and Adventure", "Anthology" , "Classic" , "Comic and Graphic Novel","Crime and Detective",};
+        final ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(getContext(), R.layout.item_list_sample, books_cateogires);
         ListView listView = (ListView) view.findViewById(R.id.Catlv);
         listView.setAdapter(itemsAdapter);
 

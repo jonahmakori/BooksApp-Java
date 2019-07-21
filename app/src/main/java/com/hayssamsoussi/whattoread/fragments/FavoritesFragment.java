@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.hayssamsoussi.whattoread.R;
 import com.hayssamsoussi.whattoread.database.CustomAdapter;
 import com.hayssamsoussi.whattoread.database.DatabaseHelper;
+import com.hayssamsoussi.whattoread.database.FavoriteAdapter;
 import com.hayssamsoussi.whattoread.database.model.FavoriteBook;
 import com.hayssamsoussi.whattoread.models.Example;
 import com.hayssamsoussi.whattoread.models.Item;
@@ -33,25 +34,27 @@ import retrofit2.Call;
 public class FavoritesFragment extends Fragment {
 
     DatabaseHelper myDb;
-    ListView myListview;
-    CustomAdapter myAdapter;
+    RecyclerView myFavoriteRV;
+    FavoriteAdapter myFavoriteAdapter;
     ArrayList<FavoriteBook> bookList;
+    private List<FavoriteBook> mFavorites;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.favorites_fragment, container, false);
 
-        myListview = view.findViewById(R.id.Favoritelv);
+        myFavoriteRV = view.findViewById(R.id.recyclerview_id);
 
         //Getting the favorites from the local database
         myDb = new DatabaseHelper(getContext());
         DatabaseHelper dbhelper = new DatabaseHelper(getContext());
-        bookList = dbhelper.getAllData();
+        mFavorites = dbhelper.getAllData();
 
         //Populating the data to the list view
-        myAdapter = new CustomAdapter(bookList, getContext());
-        myListview.setAdapter(myAdapter);
+        myFavoriteAdapter = new FavoriteAdapter(getContext(), mFavorites);
+        myFavoriteRV.setLayoutManager(new GridLayoutManager(getContext(),3));
+        myFavoriteRV.setAdapter(myFavoriteAdapter);
 
         return view;
 
@@ -70,9 +73,10 @@ public class FavoritesFragment extends Fragment {
 
             getActivity().setTitle("Favorites");
             DatabaseHelper dbhelper = new DatabaseHelper(getContext());
-            bookList = dbhelper.getAllData();
-            myAdapter = new CustomAdapter(bookList, getContext());
-            myListview.setAdapter(myAdapter);
+            mFavorites = dbhelper.getAllData();
+            myFavoriteAdapter = new FavoriteAdapter(getContext(), mFavorites);
+            myFavoriteRV.setLayoutManager(new GridLayoutManager(getContext(),3));
+            myFavoriteRV.setAdapter(myFavoriteAdapter);
         }
     }
 }
