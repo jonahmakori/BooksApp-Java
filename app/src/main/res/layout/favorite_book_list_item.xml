@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/favorite_book_thumb"
+        android:layout_width="140dp"
+        android:layout_height="190dp"
+        android:text="demo"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_book_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favorite_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Programming"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_book_isbn10"
+        app:layout_constraintStart_toEndOf="@+id/favorite_book_thumb"
+        app:layout_constraintTop_toTopOf="@+id/favorite_book_thumb" />
+
+    <TextView
+        android:id="@+id/favorite_book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/favorite_book_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_book_name" />
+
+    <TextView
+        android:id="@+id/favorite_book_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publisher"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/favorite_book_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_book_author" />
+
+    <TextView
+        android:id="@+id/favorite_book_isbn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="217dp"
+        android:text="4213214"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/favorite_book_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_book_publisher" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/favorite_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="217dp"
+        android:text="demo"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/favorite_book_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_book_publisher" />
+
+
+    <Button
+        android:id="@+id/delete_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:background="#343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

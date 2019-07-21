@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WhatToRead</string>
+    <string name="bottom_menu_movie">Movies</string>
+    <string name="bottom_menu_tv">Tv-Show</string>
+    <string name="bottom_menu_fav">Wishlist</string>
+    <string name="bottom_menu_search">Search</string>
+
+    <string name="bottom_menu_books">Books</string>
+    <string name="bottom_menu_categories">Categories</string>
+    <string name="bottom_menu_favorites">Favorites</string>
+
+    <string name="search">Search</string>
+    <string name="book_title">Book Title</string>
+
+    <string name='title_activity_book_detail'>Book</string>
+    <string name="favorites_msg">Added to favorites!</string>
+
+
+</resources>

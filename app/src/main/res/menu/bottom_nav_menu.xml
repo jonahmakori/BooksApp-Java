@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_movie"
+        android:enabled="true"
+        android:icon="@drawable/ic_book"
+        android:title="@string/bottom_menu_books"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_categories"
+        android:enabled="true"
+        android:icon="@drawable/ic_categories"
+        android:title="@string/bottom_menu_categories"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/bottom_menu_favorites"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>
