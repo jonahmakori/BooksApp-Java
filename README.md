@@ -20,9 +20,10 @@ git clone https://github.com/hayssamsoussi/BooksApp-Java.git
 - Google Books API
 
 # To Do
-- Expandable list for categories
-- Share favorite books
-- Scan book's barcode to search for it
+- [X] Add books to favorite list.
+- [ ] Expandable list for categories.
+- [ ] Share favorite books.
+- [ ] Scan book's barcode to search for it.
 
 # Contact Info
 
