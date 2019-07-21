@@ -1,6 +1,8 @@
 # Books Android App 
 A simple Android app, that helps user to discover books from Google Books API.
 
+![Alt Text](https://media.giphy.com/media/Mb9MPcUYzLMG0oEdR8/giphy.gif)
+
 # Features
 - Discover all the books
 - Read description and the information
