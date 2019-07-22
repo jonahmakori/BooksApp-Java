@@ -5,10 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.text.TextUtils;
@@ -21,7 +18,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 
 import com.hayssamsoussi.whattoread.R;
 import com.hayssamsoussi.whattoread.adapters.BooksAdapter;
@@ -30,7 +26,6 @@ import com.hayssamsoussi.whattoread.api.GBApiClient;
 import com.hayssamsoussi.whattoread.helpers.Constants;
 import com.hayssamsoussi.whattoread.models.Example;
 import com.hayssamsoussi.whattoread.models.Item;
-import com.hayssamsoussi.whattoread.models.VolumeInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -164,6 +159,7 @@ public class BooksFragment extends Fragment {
         super.onHiddenChanged(hidden);
         if (hidden) {
             //Fragment not visible
+            System.out.println("Fragment not visiable");
         }
         else
         {

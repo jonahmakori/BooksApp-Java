@@ -1,6 +1,6 @@
 package com.hayssamsoussi.whattoread.fragments;
 
-import android.database.Cursor;
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,33 +10,24 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.Toast;
+
 
 import com.hayssamsoussi.whattoread.R;
-import com.hayssamsoussi.whattoread.database.CustomAdapter;
 import com.hayssamsoussi.whattoread.database.DatabaseHelper;
 import com.hayssamsoussi.whattoread.database.FavoriteAdapter;
 import com.hayssamsoussi.whattoread.database.model.FavoriteBook;
-import com.hayssamsoussi.whattoread.models.Example;
-import com.hayssamsoussi.whattoread.models.Item;
-import com.hayssamsoussi.whattoread.models.VolumeInfo;
+
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-import retrofit2.Call;
 
 public class FavoritesFragment extends Fragment {
 
-    DatabaseHelper myDb;
-    RecyclerView myFavoriteRV;
-    FavoriteAdapter myFavoriteAdapter;
-    ArrayList<FavoriteBook> bookList;
+    private DatabaseHelper myDb;
+    private RecyclerView myFavoriteRV;
+    private FavoriteAdapter myFavoriteAdapter;
+    private ArrayList<FavoriteBook> bookList;
     private List<FavoriteBook> mFavorites;
 
     @Nullable

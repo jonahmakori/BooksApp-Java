@@ -17,10 +17,10 @@ import static android.support.constraint.Constraints.TAG;
 
 public class BookDetail extends AppCompatActivity {
 
-    String book_title, book_author, book_publisher, book_thumb, book_description, book_isbn13, book_isbn10, book_id;
-    Integer book_page;
+    private String book_title, book_author, book_publisher, book_thumb, book_description, book_isbn13, book_isbn10, book_id;
+    private Integer book_page;
     //Local database instance
-    DatabaseHelper myDb;
+    private DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

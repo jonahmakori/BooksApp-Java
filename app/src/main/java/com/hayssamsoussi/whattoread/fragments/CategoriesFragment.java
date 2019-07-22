@@ -18,7 +18,7 @@ import java.util.List;
 
 public class CategoriesFragment extends Fragment {
 
-    DatabaseHelper myDb;
+    private DatabaseHelper myDb;
     private List<String> items;
 
     @Nullable
