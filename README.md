@@ -7,10 +7,10 @@ A simple Android app, that helps user to discover books from Google Books API.
 ![Alt Text](https://media.giphy.com/media/Mb9MPcUYzLMG0oEdR8/giphy.gif)
 
 ## Features
--  Discover all the books
--  Read description and the information
--  Add books to favorite list
--  Search for books
+*  Discover all the books
+*   Read description and the information
+*  Add books to favorite list
+*  Search for books
 
 ## Install
 - Android Studio 2.3 or Higher
