@@ -1,7 +1,6 @@
 package com.hayssamsoussi.whattoread.database;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,14 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.bumptech.glide.Glide;
-import com.hayssamsoussi.whattoread.BookDetail;
 import com.hayssamsoussi.whattoread.R;
 import com.hayssamsoussi.whattoread.database.model.FavoriteBook;
-import com.hayssamsoussi.whattoread.models.Item;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import static android.support.constraint.Constraints.TAG;
@@ -92,10 +86,10 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyView
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView favorite_book_name;
-        ImageView favorite_book_thumbnail;
-        Button delete_favorite_book;
-        CardView cardView ;
+        private TextView favorite_book_name;
+        private ImageView favorite_book_thumbnail;
+        private Button delete_favorite_book;
+        private CardView cardView ;
 
         public MyViewHolder(View itemView) {
             super(itemView);
