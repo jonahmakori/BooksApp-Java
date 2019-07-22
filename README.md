@@ -13,10 +13,8 @@ A simple Android app, that helps user to discover books from Google Books API.
 *   Search for books
 
 ## Install
-- Android Studio 2.3 or Higher
-```
-git clone https://github.com/hayssamsoussi/BooksApp-Java.git
-```
+*   Android Studio 2.3 or Higher
+*   git clone https://github.com/hayssamsoussi/BooksApp-Java.git
 
 ## Libraries
 *   Retrofit 2
@@ -24,7 +22,7 @@ git clone https://github.com/hayssamsoussi/BooksApp-Java.git
 *   Glide 4.4.X
 *   Google Books API
 
-# To Do
+## To Do
 *   [X] Add books to favorite list.
 *   [ ] Expandable list for categories.
 *   [ ] Share favorite books.
