@@ -12,11 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.BitmapTransitionOptions;
 import com.hayssamsoussi.whattoread.BookDetail;
 import com.hayssamsoussi.whattoread.R;
-import com.hayssamsoussi.whattoread.models.Example;
 import com.hayssamsoussi.whattoread.models.Item;
 
 import java.util.ArrayList;
@@ -84,9 +81,9 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.MyViewHolder
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView tv_book_title;
-        ImageView img_book_thumbnail;
-        CardView cardView ;
+        private TextView tv_book_title;
+        private ImageView img_book_thumbnail;
+        private CardView cardView ;
 
         public MyViewHolder(View itemView) {
             super(itemView);

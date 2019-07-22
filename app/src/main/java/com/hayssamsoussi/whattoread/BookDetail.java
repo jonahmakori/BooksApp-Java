@@ -17,7 +17,7 @@ import static android.support.constraint.Constraints.TAG;
 
 public class BookDetail extends AppCompatActivity {
 
-    private String book_title, book_author, book_publisher, book_thumb, book_description, book_isbn13, book_isbn10, book_id;
+    private String book_title, book_author, book_publisher, book_thumb;
     private Integer book_page;
     //Local database instance
     private DatabaseHelper myDb;
@@ -42,6 +42,7 @@ public class BookDetail extends AppCompatActivity {
         TextView book_isbn10_tv = (TextView) findViewById(R.id.book_isbn10);
         ImageView book_thumb_iv = (ImageView) findViewById(R.id.book_thumbnail);
 
+        String book_description, book_isbn13, book_isbn10, book_id;
         book_id = getIntent().getExtras().getString("ID");
         book_title = getIntent().getExtras().getString("Title");
         book_author = getIntent().getExtras().getString("Author");

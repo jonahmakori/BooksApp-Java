@@ -18,9 +18,6 @@ import java.util.List;
 
 public class CategoriesFragment extends Fragment {
 
-    private DatabaseHelper myDb;
-    private List<String> items;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -61,7 +58,7 @@ public class CategoriesFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        myDb = new DatabaseHelper(getContext());
+        DatabaseHelper myDb = new DatabaseHelper(getContext());
 
     }
 
@@ -70,6 +67,7 @@ public class CategoriesFragment extends Fragment {
         super.onHiddenChanged(hidden);
         if (hidden) {
             //Fragment not currently visible
+            System.out.println("Fragment not visible");
         }
         else
         {

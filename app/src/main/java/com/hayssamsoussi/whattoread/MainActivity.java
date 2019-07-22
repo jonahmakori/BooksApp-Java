@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         fm.beginTransaction().add(R.id.fragment_container, fragment2, "2").hide(fragment2).commit();
         fm.beginTransaction().add(R.id.fragment_container, fragment1, "1").commit();
 
-        LinearLayout fragmentContainer = (LinearLayout) findViewById(R.id.fragment_container);
         BottomNavigationView mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation_main);
 
         // listener for botton navigation menu

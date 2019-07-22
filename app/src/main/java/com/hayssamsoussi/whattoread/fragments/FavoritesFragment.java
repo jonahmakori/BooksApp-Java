@@ -24,10 +24,8 @@ import java.util.List;
 
 public class FavoritesFragment extends Fragment {
 
-    private DatabaseHelper myDb;
     private RecyclerView myFavoriteRV;
     private FavoriteAdapter myFavoriteAdapter;
-    private ArrayList<FavoriteBook> bookList;
     private List<FavoriteBook> mFavorites;
 
     @Nullable
@@ -38,7 +36,7 @@ public class FavoritesFragment extends Fragment {
         myFavoriteRV = view.findViewById(R.id.recyclerview_id);
 
         //Getting the favorites from the local database
-        myDb = new DatabaseHelper(getContext());
+        DatabaseHelper myDb = new DatabaseHelper(getContext());
         DatabaseHelper dbhelper = new DatabaseHelper(getContext());
         mFavorites = dbhelper.getAllData();
 
@@ -57,6 +55,7 @@ public class FavoritesFragment extends Fragment {
         super.onHiddenChanged(hidden);
         if (hidden) {
             //FRAGMENT NOT VISIBLE
+            System.out.println("Fragment not visible");
         }
         else
         {

@@ -41,9 +41,9 @@ public class BooksFragment extends Fragment {
     private List<Item> mItems;
     private BooksAdapter myAdapter;
     private static final String TAG = "BooksFragment";
-    ProgressBar pb;
+    private ProgressBar pb;
     private static Integer startIndex = 0;
-    private RecyclerView myrv;
+
 
     @Nullable
     @Override
@@ -60,7 +60,7 @@ public class BooksFragment extends Fragment {
         //List to store the books fetched
         mItems = new ArrayList<>();
         //The recycler view that will show the grid of the fetched books
-        myrv = (RecyclerView) view.findViewById(R.id.recyclerview_id);
+        RecyclerView myrv = (RecyclerView) view.findViewById(R.id.recyclerview_id);
         //Adapter that will populate the recyclerview with data
         myAdapter = new BooksAdapter(getContext(), mItems);
         //Setting up the layout of the grid
@@ -113,8 +113,6 @@ public class BooksFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (TextUtils.isEmpty(newText)) {
-                } else { }
                 return true;
             }
         });
@@ -133,7 +131,7 @@ public class BooksFragment extends Fragment {
                     mCallBooks.enqueue(this);
                     return;
                 }
-                if (response.body().equals(null)){
+                if (response.body() == null){
                     Log.d(TAG, "loadUpcomingMovies() No data");             }
                 else{
                     mItems.addAll(response.body().getItems());
@@ -159,7 +157,7 @@ public class BooksFragment extends Fragment {
         super.onHiddenChanged(hidden);
         if (hidden) {
             //Fragment not visible
-            System.out.println("Fragment not visiable");
+            System.out.println("Fragment not visible");
         }
         else
         {
